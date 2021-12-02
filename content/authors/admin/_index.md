@@ -62,12 +62,20 @@ email: ""
 highlight_name: true
 ---
 
-Hui Feng is a student who study in CMU Entertainment Technology, currently a Technical Artist Intern at Tencent Games.
--Good command of C# code writing and the realization of in-game rendering effects.
--Hands-on experiences in commercial game engines,especially Unity.
--Familiar with C++ language foundation, including related knowledge of object-oriented and container.
--Master the relevant knowledge and algorithms of computer graphics, such as rendering pipelines, shaders, etc.
--Proficient in using the shader language of CG and HLSL, such as the writing of CG under the unity build-in pipeline, and the writing of HLSL under the unity URP pipeline. Understand the basics of GLSL language.
--Great understanding of PBR principle and texturing.
+Hui Feng is a student who study in CMU Entertainment Technology.
+
+Good command of C# code writing and the realization of in-game rendering effects.
+
+Hands-on experiences in commercial game engines,especially Unity.
+
+Familiar with C++ language foundation, including related knowledge of object-oriented and container.
+
+Master the relevant knowledge and algorithms of computer graphics, such as rendering pipelines, shaders, etc.
+
+Proficient in using the shader language of CG and HLSL, such as the writing of CG under the unity build-in pipeline, and the writing of HLSL under the unity URP pipeline. 
+
+Understand the basics of GLSL language.
+
+Great understanding of PBR principle and texturing.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume-HUI-FENG1.pdf" "newtab" >}}resumé{{< /staticref >}}.
