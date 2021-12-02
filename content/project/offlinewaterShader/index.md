@@ -1,8 +1,8 @@
 ---
-title: Example Project
+title: Large-scale water body rendering based on offline FFT.
 summary: An example of using the in-built project page.
 tags:
-- Deep Learning
+- Computer Graphics
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
