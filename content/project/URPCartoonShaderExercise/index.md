@@ -2,8 +2,8 @@
 title: URP Cartoon character shader exercise
 summary: 
 tags:
-- Deep Learning
-date: "2016-04-27T00:00:00Z"
+- Computer Graphics
+date: "2021-12-03T16:24:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
