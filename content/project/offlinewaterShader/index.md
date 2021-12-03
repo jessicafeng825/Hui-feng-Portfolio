@@ -31,7 +31,7 @@ url_video: ""
 ### [❤️ Click here to watch the video about the water shader ❤️](https://v.youku.com/v_show/id_XNTEzNTA5MjgxMg==.html)
 involved technology: C#、Unity shader、compute shader
 This method was first used by the Assassin's Creed 3 team.
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map3.jpg" title=" Assassin's Creed 3 " >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map3.jpg" title=" Assassin's Creed 3 " >}}
 
 The FFT ocean structure uses the Tessendorf Spectrum+Donelan-Banner+stockham FFT algorithm architecture, and Implemented on the compute shader. 
 
