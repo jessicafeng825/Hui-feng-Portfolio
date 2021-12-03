@@ -3,7 +3,7 @@ title: URP Cartoon character shader exercise
 summary: 
 tags:
 - Computer Graphics
-date: "2021-12-03T16:24:00Z"
+date: "2020-12-03T16:24:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
