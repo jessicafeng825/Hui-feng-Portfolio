@@ -35,19 +35,19 @@ This method was first used by the Assassin's Creed 3 team.
 
 The FFT ocean structure uses the Tessendorf Spectrum+Donelan-Banner+stockham FFT algorithm architecture, and Implemented on the compute shader. 
 
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map7.jpg" title="IDFT ocean Tessendorf from Simulating Ocean Water Jerry Tessendorf" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map7.jpg" title="IDFT ocean Tessendorf from Simulating Ocean Water Jerry Tessendorf" >}}
 
 The shape of the water body, the lighting effect, and the foam on the top of the wave are realized through the calculated displacement, normal, and bubble map.
 
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map1.jpg" title="Ocean Surface Simulation NIVIDA" >}}
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map2.jpg" title="Ocean Surface Simulation NIVIDA" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map1.jpg" title="Ocean Surface Simulation NIVIDA" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map2.jpg" title="Ocean Surface Simulation NIVIDA" >}}
 
 Save the calculated Render Texture as png for each frame; use Resources.load() to load the texture into the array for dynamic loading,Then change the corresponding texture in the material according to the time.
 
 
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map4.jpg" >}}
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map5.jpg"  >}}
-{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map6.jpg"  >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map4.jpg" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map5.jpg"  >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/offlinewaterShader/map6.jpg"  >}}
 
 Here they baked a 32*32 resolution displacement map and a 128*128 normal map, baking a total of 128 frames. In the actual project, they found that a lower resolution of the displacement map would not have much impact. Here I use the compute shader to pre-calculate the texture data of the displacement map, normal map, and bubble map of 128 frames per frame, bake and save the data, and then load it into the shader for rendering when it runs. For the convenience of testing, I set the resolution to 512*512 first, but I can actually adjust it later.
 
