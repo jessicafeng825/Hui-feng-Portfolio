@@ -1,4 +1,3 @@
-
 ---
 title: Large-scale water body rendering based on offline FFT.
 summary: This project adopts offline FFT method, uses compute shader to calculate FFT waveform, and pre-computes and renders a series of displacement,
@@ -22,7 +21,6 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
-### [❤️ Click here to watch the video about the water shader ❤️](https://v.youku.com/v_show/id_XNTEzNTA5MjgxMg==.html)
 
 # Slides (optional).
 #   Associate this project with Markdown slides.
@@ -32,6 +30,7 @@ url_video: ""
 
 ---
 
+### [❤️ Click here to watch the video about the water shader ❤️](https://v.youku.com/v_show/id_XNTEzNTA5MjgxMg==.html)
 involved technology: C#、Unity shader、compute shader
 This method was first used by the Assassin's Creed 3 team.
 {{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map3.jpg" title=" Assassin's Creed 3 " >}}
