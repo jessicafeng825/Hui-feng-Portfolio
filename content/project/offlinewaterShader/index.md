@@ -1,6 +1,8 @@
 ---
 title: Large-scale water body rendering based on offline FFT.
-summary: An example of using the in-built project page.
+summary: This project adopts offline FFT method, uses compute shader to calculate FFT waveform, and pre-computes and renders a series of displacement,
+Normal, bubble map, load resources dynamically at runtime. For water coloring, the unity shader under the default pipeline is used to realize the water
+The effect of body gradation, refraction, reflection, wave tip foam and shore waves.
 tags:
 - Computer Graphics
 date: "2016-04-27T00:00:00Z"
@@ -19,6 +21,8 @@ url_pdf: ""
 url_slides: ""
 url_video: ""
 
+### [❤️ Click here to watch the video about the water shader ❤️](https://v.youku.com/v_show/id_XNTEzNTA5MjgxMg==.html)
+
 # Slides (optional).
 #   Associate this project with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
@@ -27,12 +31,36 @@ url_video: ""
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+involved technology: C#、Unity shader、compute shader
+This method was first used by the Assassin's Creed 3 team.
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map3.jpg" title=" Assassin's Creed 3 " >}}
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+The FFT ocean structure uses the Tessendorf Spectrum+Donelan-Banner+stockham FFT algorithm architecture, and Implemented on the compute shader. 
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map7.jpg" title="IDFT ocean Tessendorf from Simulating Ocean Water Jerry Tessendorf" >}}
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+The shape of the water body, the lighting effect, and the foam on the top of the wave are realized through the calculated displacement, normal, and bubble map.
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map1.jpg" title="Ocean Surface Simulation NIVIDA" >}}
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map2.jpg" title="Ocean Surface Simulation NIVIDA" >}}
+
+Save the calculated Render Texture as png for each frame; use Resources.load() to load the texture into the array for dynamic loading,Then change the corresponding texture in the material according to the time.
+
+
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map4.jpg" >}}
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map5.jpg"  >}}
+{{< figure src="https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/offlinewaterShader/map6.jpg"  >}}
+
+Here they baked a 32*32 resolution displacement map and a 128*128 normal map, baking a total of 128 frames. In the actual project, they found that a lower resolution of the displacement map would not have much impact. Here I use the compute shader to pre-calculate the texture data of the displacement map, normal map, and bubble map of 128 frames per frame, bake and save the data, and then load it into the shader for rendering when it runs. For the convenience of testing, I set the resolution to 512*512 first, but I can actually adjust it later.
+
+This method requires a certain amount of memory to make the sequence frame, but it does not take up a lot of memory (it can be adjusted by setting the baked texture size and the sequence frame rate).
+
+The realization of reflection and refraction obtains the corresponding reflection and refraction RenderTexture through the newly added camera in the screen space and transmits it to the water surface material.
+
+### [❤️ Click here to watch the video about the implementation of the offline FFT with the Wave foam on the shore ❤️](https://v.youku.com/v_show/id_XNTEzNTk5NDEwMA==.html?spm=a2hbt.13141534.1_2.d_2&scm=20140719.manual.114461.video_XNTEzNTk5NDEwMA==)
+
+The gradient of the ocean obtains the water depth by sampling the camera depth and the depth of the water surface, and then sampling the ramp map to construct the basic water color; the shore waves are constructed by obtaining the water depth . and use this way to achieve UV animation.
+
+
+### [Zhihu Link with more detailed information about this project](https://zhuanlan.zhihu.com/p/351455975)
+
