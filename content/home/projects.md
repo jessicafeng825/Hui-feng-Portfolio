@@ -29,8 +29,10 @@ content:
     tag: '*'
   - name: Computer Graphics
     tag: Computer Graphics
-  - name: BVW
-    tag: BVW
+   - name: Shader
+    tag: shader
+  - name: BVW Projects
+    tag: BVW Projects
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
