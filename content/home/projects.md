@@ -29,8 +29,8 @@ content:
     tag: '*'
   - name: Computer Graphics
     tag: Computer Graphics
-   - name: Shader
-    tag: shader
+  - name: Unity Shader
+    tag: Unity shader
   - name: BVW Projects
     tag: BVW Projects
 
