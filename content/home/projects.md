@@ -31,8 +31,8 @@ content:
     tag: Computer Graphics
   - name: Unity Shader
     tag: Unity shader
-  - name: BVW Projects
-    tag: BVW Projects
+  - name: Game Development
+    tag: Game Development 
   - name: Tools
     tag: Tools
 
