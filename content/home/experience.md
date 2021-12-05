@@ -25,11 +25,11 @@ experience:
   - title: Technical Artist
     company: Tencent Games
     company_url: ''
-    
+    company_logo: org-gc
     location: Shenzhen, Guangdong, China
     date_start: '2021-05-01'
     date_end: '2021-08-01'
-    description: 
+    description: |2-
         Responsibilities include:
         
           -Use PBR rendering model for character rendering, such as skin and eyeball rendering
@@ -40,11 +40,11 @@ experience:
   - title: Technical Artist
     company: Kingsoft
     company_url: ''
-    
+    company_logo: org-gc
     location: Zhuhai, Guangdong, China
     date_start: '2020-09-01'
     date_end: '2021-01-31'
-    description: 
+    description: |2-
        Responsibilities include:
         
         -Research on water shading related technologies and develop offline FFT water.
