@@ -22,37 +22,30 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Technical Artist
-    company: Tencent Games
+  - title: CEO
+    company: GenCoin
     company_url: ''
     company_logo: org-gc
-    location: Shenzhen, Guangdong, China
-    date_start: '2021-05-01'
-    date_end: '2021-08-01'
-    description:
+    location: California
+    date_start: '2021-01-01'
+    date_end: ''
+    description: |2-
         Responsibilities include:
         
-          -Use PBR rendering model for character rendering, such as skin and eyeball rendering
-          -Modify the rendering pipeline of the project to improve the rendering performance and quality of the project
-          -Fix rendering errors in the project, improve rendering performance
-
+        * Analysing
+        * Modelling
+        * Deploying
         
-  - title: Technical Artist
-    company: Kingsoft
+  - title: Professor of Semiconductor Physics
+    company: University X
     company_url: ''
-    company_logo: org-gc
-    location: Zhuhai, Guangdong, China
-    date_start: '2020-09-01'
-    date_end: '2021-01-31'
-    description: 
-       Responsibilities include:
-        -Research on water shading related technologies and develop offline FFT water.
-        -Develop an analysis and debugging tool for the Overdraw rate of the mobile game terminal.
-        -Use Snapdragon Profiler to reproduce and analyze the effects of mobile games.
-        -Achieve the character cartoon rendering outline, cel shading, and multi-light source shadows under the URP pipeline.
-
-
+    company_logo: org-x
+    location: California
+    date_start: '2016-01-01'
+    date_end: '2020-12-31'
+    description: Taught electronic engineering and researched semiconductor physics.
 
 design:
   columns: '2'
 ---
+
