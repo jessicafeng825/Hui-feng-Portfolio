@@ -46,7 +46,6 @@ experience:
     date_end: '2021-01-31'
     description: 
        Responsibilities include:
-        
         -Research on water shading related technologies and develop offline FFT water.
         -Develop an analysis and debugging tool for the Overdraw rate of the mobile game terminal.
         -Use Snapdragon Profiler to reproduce and analyze the effects of mobile games.
