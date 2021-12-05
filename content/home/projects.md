@@ -33,6 +33,8 @@ content:
     tag: Unity shader
   - name: BVW Projects
     tag: BVW Projects
+  - name: Tools
+    tag: Tools
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
