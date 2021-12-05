@@ -36,6 +36,8 @@ slides: example
 involved technology: C#、URP、HLSL
 
 Use the external expansion method to outline, control the width of the outline according to the character's Z value and the camera's fov value, and the Z offset value to eliminate some unnecessary outlining weight and outline thickness attributes.
+
 The first-order Cel shading is used to set the shadow's cut-off threshold, and NdotL controls the light. At the same time, use smoothstep function and variables to control the softness and hardness of the shadow.
+
 Traverse multiple light sources and calculate all lighting effects, including self-illumination, indirect light and direct light; the realization of the shadow is to use ApplyShadowBias() function in the ShadowCaster pass to obtain the special clipping space coordinates for shadow projection, and the Z reverse processing is also required.
 
