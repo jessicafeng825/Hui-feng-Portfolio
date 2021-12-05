@@ -3,7 +3,7 @@ title: Large-scale water body rendering based on offline FFT.
 summary: This project adopts offline FFT method, uses compute shader to calculate FFT waveform, and pre-computes and renders a series of displacement,Normal, bubble map, load resources dynamically at runtime. For water coloring, the unity shader under the default pipeline is used to realize the water effect of gradation, refraction, reflection, wave tip foam and shore waves.
 tags:
 - Computer Graphics
-date: "2016-04-27T00:00:00Z"
+date: "2020-10-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
