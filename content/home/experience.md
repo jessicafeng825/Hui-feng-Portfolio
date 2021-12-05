@@ -14,7 +14,7 @@ subtitle:
 
 # Date format for experience
 #   Refer to https://wowchemy.com/docs/customization/#date-format
-date_format: Dec 2021
+date_format: Jan 2006
 
 # Experiences.
 #   Add/remove as many `experience` items below as you like.
@@ -29,7 +29,7 @@ experience:
     location: Shenzhen, Guangdong, China
     date_start: '2021-05-01'
     date_end: '2021-08-01'
-    description: |2-
+    description:
         Responsibilities include:
         
           -Use PBR rendering model for character rendering, such as skin and eyeball rendering
@@ -44,7 +44,7 @@ experience:
     location: Zhuhai, Guangdong, China
     date_start: '2020-09-01'
     date_end: '2021-01-31'
-    description: |2-
+    description: 
        Responsibilities include:
         
         -Research on water shading related technologies and develop offline FFT water.
