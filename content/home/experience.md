@@ -25,7 +25,7 @@ experience:
   - title: Technical Artist
     company: Tencent Games
     company_url: ''
-    company_logo: org-gc
+    company_logo: 
     location: ShenZhen,Guangdong,China
     date_start: '2021-05-01'
     date_end: '2021-08-24'
@@ -41,7 +41,7 @@ experience:
   - title: Technical Artist
     company: Kingsoft
     company_url: ''
-    company_logo: org-x
+    company_logo: 
     location: Zhuhai,Guangdong,China
     date_start: '2020-09-01'
     date_end: '2021-01-29'
