@@ -1,6 +1,6 @@
 ---
 title: The ordinary flowershop
-summary: As an ordinary flowershop owner, you need to supply your wired customer with different kinds of flower bouquet. you will find out the customer 's needs in certain ways and cheer them up by giving them the flower! however,by giving the suitable flowers for each customers and cheering them up makes this ordinary flower shop extraordinary! 
+summary: The project was created during the building visual world in round2.As an ordinary flowershop owner, you need to supply your wired customer with different kinds of flower bouquet. you will find out the customer 's needs in certain ways and cheer them up by giving them the flower! however,by giving the suitable flowers for each customers and cheering them up makes this ordinary flower shop extraordinary! 
 tags:
 - Game Development
 
