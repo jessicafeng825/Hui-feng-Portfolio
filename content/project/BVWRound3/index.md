@@ -34,4 +34,4 @@ url_video: ""
 involved technology: C#、Game development、unity、Unity shader
 
 
-i am responsible for the main game logic including the controller of the car which using the petals and wheels and the number of the hits and health.and also some lightings in this game.
+i am responsible for the main game logic including the controller of the car which using the petals to speed up and wheels to control direction and the number of the hits and fuels. the fuels will decrease every 20 seconds.when the fuels runs out or hits 4 rocks the game ends.and also some lightings in this game.
