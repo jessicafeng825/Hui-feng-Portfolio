@@ -29,7 +29,7 @@ url_video: ""
 ---
 
 
-### [👉 Click here to watch the video about this project 👈](https://v.youku.com/v_show/id_XNTgyNTM2Mjc4OA==.html?spm=a2hbt.13141534.1_2.d_1&scm=20140719.manual.114461.video_XNTgyNTM2Mjc4OA==)
+### [👉 Click here to watch the video about this project 👈](https://www.youtube.com/watch?v=2hUC_jT2-1A)
 
 
 involved technology: C#、Game development、unity、Unity shader
