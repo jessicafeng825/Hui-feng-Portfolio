@@ -29,18 +29,10 @@ url_video: ""
 ---
 
 
-### [👉 Click here to watch the video about this project 👈](https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/OverwriteTools/overdraw%E6%8C%87%E6%A0%87%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D.pptx?raw=true)
+### [👉 Click here to watch the video about this project 👈](https://v.youku.com/v_show/id_XNTgyNTM2Mjc4OA==.html?spm=a2hbt.13141534.1_2.d_1&scm=20140719.manual.114461.video_XNTgyNTM2Mjc4OA==)
 
 
 involved technology: C#、Game development、unity、Unity shader
 
 
-the peak value of single frame fillrate multiple = the peak value of single frame fillrate/ frame rendering camera resolution
-
-single frame fillrate multiple = single frame fillrate/ frame rendering camera resolution
-
-GPU actual fillrate multiple = The total number of fills in this frame /screen resolution to which this frame is projected ;The higher the value, the greater the overdraw rate.
-
-GPU fillrate multiple peak =  the peak of GPU actual fillrate multiple
-
-actual fillrate multiple = Add the actual GPU fillrates multiples of all cameras .and also shows the maximum of actual fillrates.
+i am responsible for the whole game logic code,VR platform settings,cartoon shader for character,and the lighting.
