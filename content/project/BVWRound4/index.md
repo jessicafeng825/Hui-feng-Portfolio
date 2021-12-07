@@ -1,6 +1,6 @@
 ---
 title: The Pyres
-summary: The project was created during the building visual world in round3. After receiving a mysterious voicemail in your new home, you must explore and uncover the story behind the death of Jamie Pyre. A VR horror experience. 
+summary: The project was created during the building visual world in round4. After receiving a mysterious voicemail in your new home, you must explore and uncover the story behind the death of Jamie Pyre. A VR horror experience. 
 tags:
 - Game Development
 
