@@ -28,7 +28,7 @@ url_video: ""
 ---
 
 
-### [👉 Click here to watch the video about this project 👈](https://www.youtube.com/watch?v=_2nRvd-yjBY)
+### [👉 Click here to watch the video about this project 👈](https://www.youtube.com/watch?v=pH_Y3WVDzHQ)
 
 
 involved technology: C#、Game development、unity、Unity shader
