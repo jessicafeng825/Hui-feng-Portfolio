@@ -35,4 +35,4 @@ url_video: ""
 involved technology: C#、Game development、unity、Unity shader
 
 
-i am responsible for the the AR flower interatcion game logic,all of the VFX and partical system for the flower,cartoon shader for character,and the lighting.
+i am responsible for the the AR flower interatcion game logic and all of the partical system for the flower which include the bee flying,flower burning and the fireworks effect. and also thecartoon shader for character and the lighting.
