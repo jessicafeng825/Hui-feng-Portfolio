@@ -1,6 +1,7 @@
 ---
 title: DesertDush
 summary: The project was created during the building visual world in round3.Given a pedal and a steering wheel, guests will drive to the desert avoiding rocks and cacti while collecting fuel to keep going. How far can you get?this project was under the team VR platform.
+tags:
 - Game Development
 
 date: "2021-10-10T16:24:00Z"
