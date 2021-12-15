@@ -1,6 +1,6 @@
 ---
 title: Overdraw rate analysis and debugging tool
-summary: This project realized the display of the overdraw-related indicators of each camera during the debugging of the mobile game, so as to detect and troubleshoot the overdraw problem in the mobile game.
+summary: This project is a tool forr showing the overdraw rate both in Unity Editor and in running Game. it realized the display of the overdraw-related indicators of each camera during the debugging of the mobile game, so as to detect and troubleshoot the overdraw problem in the mobile game.
 tags:
 - Tools
 
@@ -28,6 +28,7 @@ url_video: ""
 
 ---
 
+In order to detect where the overdraw rate is relatively high, I developed this tool. This tool can display the overdraw rate when running in the unity editor, and it can also display the overdraw rate when the game is running in the Android platfrom. by using this tool, you can find out Where is the performance bottleneck of the game.
 
 ### [👉 Click here to read the detailed Description about it 👈](https://github.com/jessicafeng825/Hui-feng-Portfolio/blob/master/content/project/OverwriteTools/overdraw%E6%8C%87%E6%A0%87%E5%B7%A5%E5%85%B7%E4%BB%8B%E7%BB%8D.pptx?raw=true)
 ### [👉 Here is my article on how to implement this tool. 👈](https://zhuanlan.zhihu.com/p/323421079)
