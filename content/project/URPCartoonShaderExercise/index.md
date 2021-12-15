@@ -3,7 +3,7 @@ title: URP Cartoon character shader exercise
 summary: This project mainly implements the character outline, cel shading, and multi-light source shadow of character cartoon rendering under the URP pipeline.
 tags:
 - Computer Graphics
-- Unity Shader
+- Unity shader
 date: "2021-03-03T16:24:00Z"
 
 # Optional external URL for project (replaces project detail page).
