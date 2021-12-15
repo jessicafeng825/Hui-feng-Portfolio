@@ -28,13 +28,18 @@ url_video: ""
 
 ---
 
+
 Assisting my mentor to carry out code transplantation for the project. During the period, I became familiar with the implementation of the character PBR skin and eyeballs and the framework architecture URP shader. I learned a series of URP usage and code framework example projects. At the same time, learn the low-level source code of unity URP and summarize it.
+
 
 Participated in the completion of the transplantation of some codes, such as the transplantation of the CG to HLSL code of the eyeball part.
 
+
 The original shader is optimized, and the switch and shader feature for multi-light source calculation and SH calculation are added to prevent the eyeball from being too dark due to Ambient Occlusion and make the effect more natural.
 
+The Switch for the new shader feature:
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/BuildinToURP/1.png" >}}
+
 
 before And After:
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/BuildinToURP/2.png" >}}
