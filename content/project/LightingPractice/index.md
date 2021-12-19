@@ -38,16 +38,16 @@ During my period, I learned the basic operations and functions of UE4, including
 
 
 Midnight
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/1.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/1.jpg" >}}
 
 Noon
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/2.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/2.jpg" >}}
 
 Afternoon
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/3.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/3.jpg" >}}
 
 Sunset/Early Morning
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/4.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/4.jpg" >}}
 
 
 involved technology: Unreal Engine、Lighting
