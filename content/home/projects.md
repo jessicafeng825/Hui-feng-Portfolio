@@ -35,6 +35,10 @@ content:
     tag: Game Development 
   - name: Tools
     tag: Tools
+  - name: Unreal
+    tag: Unreal
+  - name: Lighting
+    tag: Lighting
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
