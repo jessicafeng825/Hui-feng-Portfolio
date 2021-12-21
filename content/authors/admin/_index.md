@@ -19,7 +19,7 @@ interests:
 - Game Development
 - Shader
 - Rendering pipeline
-- Tools
+- Tools development
 - Modeling and Texturing
 
 # Education to show in About widget
