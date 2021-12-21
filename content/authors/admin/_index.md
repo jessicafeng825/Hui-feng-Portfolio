@@ -65,20 +65,20 @@ email: ""
 highlight_name: true
 ---
 
-Hui Feng is a student who study in CMU Entertainment Technology.
+Hui Feng is a student who is studying at CMU Entertainment Technology center.
 
-Good command of C# code writing and the realization of in-game rendering effects.
+-Good command of C# code writing and the realization of in-game rendering effects.
 
-Hands-on experiences in commercial game engines,especially Unity.
+-Hands-on experiences in  commercial game engines,especially Unity.
 
-Familiar with C++ language foundation, including related knowledge of object-oriented and container.
+-Familiar with C++ language foundation, including related knowledge of object-oriented and container.
 
-Master the relevant knowledge and algorithms of computer graphics, such as rendering pipelines, shaders, etc.
+-Great understanding of the relevant knowledge and algorithms of computer graphics, such as rendering pipelines, shaders, etc.
 
-Proficient in using the shader language of CG and HLSL, such as the writing of CG under the unity build-in pipeline, and the writing of HLSL under the unity URP pipeline. 
+-Proficient in using the shader language of CG and HLSL, such as the writing of CG under the unity build-in pipeline, and the writing of HLSL under the unity URP pipeline. Understand the basics of GLSL language.
 
-Understand the basics of GLSL language.
+-Great understanding of PBR principle and texturing.
 
-Great understanding of PBR principle and texturing.
+-Experience using Substance Designer and Photoshop.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume-HUI-FENG1.pdf" "newtab" >}}resumé{{< /staticref >}}.
