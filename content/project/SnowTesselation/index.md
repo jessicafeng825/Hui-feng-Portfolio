@@ -2,8 +2,8 @@
 title: Interactive snow Effect with footprints and tracks
 summary: This project was done during my internship in tencent games. 
 tags:
-- Unreal
-- Lighting
+- Unity Shader
+- Computer Graphics
 
 date: "2021-08-10T16:24:00Z"
 
