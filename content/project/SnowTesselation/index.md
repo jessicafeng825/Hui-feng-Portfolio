@@ -1,6 +1,6 @@
 ---
 title: Interactive snow Effect with footprints and tracks
-summary: This project was done during my internship in tencent games. 
+summary: This project was finished during my internship in tencent games. For the game project that i was working with to achieve the needs of the dynamic interactive snow effect of the characters stepping on the snow, mainly the realization of snow material rendering, trajectory and footprints.
 tags:
 - Unity Shader
 - Computer Graphics
@@ -29,25 +29,22 @@ url_video: ""
 
 ---
 
+### [👉 Click here to watch the video about it 👈](https://www.youtube.com/watch?v=54g3fXiRKcg)
+
+The dynamic interactive snow effect includes the rendering of snow material and the dynamic update of footprints or trajectories. This project is developed under the unity build-in pipeline.
+
+1. Rendering of the Snow
+This picture is the shader property panel of Snow：
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/1.jpg" >}}
+
+The Snow is using PBR shaing and PBR textures,including Albedo, Normal, Metallic, Roughness, Ambient Occlusion, Emission Maps. What's more , Metallic, Roughness, Ambient Occlusion, Emission Maps are compressed into one picture, respectively in the RGBA channel.
+
+When rendering snow, it is divided into upper snow and lower snow materials to be rendered separately, and then blend them.
 
 
-I set up and rectified assets, optimized assets, packaged maps, and made shaders. At the same time, I needed to use lighting knowledge to create a standard lighting scene including scenes and characters, including lighting in various time periods in the morning, midnight and evening.
 
 
-During my period, I learned the basic operations and functions of UE4, including materials, art asset settings, lighting and post-processing effects, etc.
 
 
-Midnight
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/1.jpg" >}}
-
-Noon
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/2.jpg" >}}
-
-Afternoon
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/3.jpg" >}}
-
-Sunset/Early Morning
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/LightingPractice/4.jpg" >}}
-
-
-involved technology: Unreal Engine、Lighting
+involved technology: Unity Shader、C#
