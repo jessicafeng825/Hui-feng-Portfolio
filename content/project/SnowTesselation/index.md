@@ -51,7 +51,7 @@ Place an orthogonal camera under the snow to shoot from bottom to top, use a mat
 
 
 
-Set the replacement shader to update the depth map and output a Displacement Render Texture. At the same time, use a height map to control the initial height of the snow, and at the same time as the initial value of the Displacement Render Texture.
+Set the replacement shader to update the depth map and output a Displacement Render Texture. At the same time, use a heightmap to control the initial height of the snow, and at the same time as the initial value of the Displacement Render Texture.
 
 
 
