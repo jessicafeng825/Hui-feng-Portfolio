@@ -36,22 +36,31 @@ The dynamic interactive snow effect includes the rendering of snow material and 
 1. Rendering of the Snow
 This picture is the shader property panel of Snow：
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/1.jpg" >}}
 
 The Snow is using PBR shaing and PBR textures,including Albedo, Normal, Metallic, Roughness, Ambient Occlusion, Emission Maps. What's more , Metallic, Roughness, Ambient Occlusion, Emission Maps are compressed into one picture, respectively in the RGBA channel.
 
 When rendering snow, it is divided into upper snow and lower snow materials to be rendered separately, and then blend them.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/1.jpg" >}}
 
 
 2.Updating the displacement texture
 
 Place an orthogonal camera under the snow to shoot from bottom to top, use a material with a replacement shader to record and accumulate depth in each frame, set up shadertags for two different objects (Eg.ground and people), depending on the different shader tag to record different object depths.
 
+
+
 Set the replacement shader to update the depth map and output a Displacement Render Texture. At the same time, use a height map to control the initial height of the snow, and at the same time as the initial value of the Displacement Render Texture.
+
+
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/3.jpg" >}}
 
+
+
 Perform vertex offset and change the Normal Map of the snow material according to Displacement RT. 
+
+
 
 Set the surface subdivision parameters, perform mesh subdivision, and rewrite the surface subdivision function. This is used in the Build-in shader to increase model details. At the same time, a smoothing algorithm is used to smooth the depressions.The algorithm use the difference between the average of the surrounding texel with the current pixel to lerp between them to achieve the smoothing.
 
