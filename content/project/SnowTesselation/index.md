@@ -63,7 +63,7 @@ Perform vertex offset and change the Normal Map of the snow material according t
 
 
 
-Set the surface subdivision parameters, perform mesh subdivision, and rewrite the surface subdivision function. This is used in the Build-in shader to increase model details. At the same time, a smoothing algorithm is used to smooth the depressions.
+Set the surface subdivision parameters, perform mesh subdivision, and rewrite the surface subdivision function. This is used in the Build-in shader to increase model details. At the same time, a smoothing algorithm is used to smooth the area between the upper and the bottom.
 
 The algorithm use the difference between the average of the surrounding texel with the current pixel to lerp between them to achieve the smoothing.
 
