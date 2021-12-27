@@ -33,14 +33,15 @@ url_video: ""
 
 The dynamic interactive snow effect includes the rendering of snow material and the dynamic update of footprints or trajectories. This project is developed under the unity build-in pipeline.
 
+
 1. Rendering of the Snow
-This picture is the shader property panel of Snow：
 
 
 The Snow is using PBR shaing and PBR textures,including Albedo, Normal, Metallic, Roughness, Ambient Occlusion, Emission Maps. What's more , Metallic, Roughness, Ambient Occlusion, Emission Maps are compressed into one picture, respectively in the RGBA channel.
 
 When rendering snow, it is divided into upper snow and lower snow materials to be rendered separately, and then blend them.
 
+This picture is the shader property panel of Snow：
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/1.jpg" >}}
 
 
