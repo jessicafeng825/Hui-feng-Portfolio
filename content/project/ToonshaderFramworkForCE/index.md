@@ -37,9 +37,18 @@ url_video: ""
 The rendering framework is the PBR Toon shader under the unity URP pipeline. Refer to the URP lighting model and use BRDF based on Minimalist CookTorrance.SPR Batch Compatible.
 
 
-
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/1.jpg" >}}
 
+
+the phone i am using for testing the performance is OPPO findX2 which has  Qualcomm 585 CPU and Adreno 650 GPU with Android OS 10 system. here is some picture of the performance:
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/2.jpg" >}}
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/3.jpg" >}}
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/4.jpg" >}}
+
+the fps is around 60.
 
 1. shader property
 
