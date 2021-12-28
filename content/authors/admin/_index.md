@@ -81,4 +81,4 @@ Hui Feng is a student who is studying at CMU Entertainment Technology center.
 
 -Experience using Substance Designer and Photoshop.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Resume-HUI-FENG1.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Hui_Feng_Technical_Artist.pdf" "newtab" >}}resumé{{< /staticref >}}.
