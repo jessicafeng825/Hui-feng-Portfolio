@@ -55,7 +55,7 @@ Shader parameter attributes:
 
 1. Main Properties
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/2.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
 
 Global Setting-XY-ZW: Control the Tiling and offset of all textures in Main Properties.
 
@@ -97,7 +97,7 @@ Intensity: Emission degree.
 
 2. Mask Properties : Mask attribute used to control the puddle
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/4.png" >}}
 
 Visualize Mask: Whether to visualize the Mask.
 
@@ -120,7 +120,7 @@ The larger the spread, the less water will become.
 3. Reflection Properties
 
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/4.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/5.png" >}}
 
 
 Color: Specify the color of the reflection.
@@ -136,7 +136,7 @@ Use Main Normal Map as Normal Direction:Whether to use the principal normal dire
 
 4. Rain Dots : this properties is used for raindrop effects on wet surfaces.
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/5.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/6.png" >}}
 
 Gradient Tex: Control the visibility of raindrops, corresponding from left to right, the ones that have just fallen appear to disappear.
 
@@ -150,7 +150,7 @@ Size: Control the size of each raindrop.
 
 5. Puddles Properties : this properties is used to control the properties of puddles.
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/6.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/7.png" >}}
 
 
 Color: Specify the color of the puddle.
@@ -188,7 +188,7 @@ Rotation: Detail Wave flow direction angle.
 6. Rain Ripples : this properties control rain ripple properties
 
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/7.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/8.png" >}}
 
 X(Columns)-Y(Rows)-Z(Speed)-W(Strart Frame)-Specify the number of columns and rows of the normal map of the selected texture atlas.
 
