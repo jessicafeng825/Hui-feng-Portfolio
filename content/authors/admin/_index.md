@@ -65,7 +65,10 @@ email: ""
 highlight_name: true
 ---
 
-Hui Feng is a student who is studying at CMU Entertainment Technology center. I am a capable and consistent problem-solver who is very willing to sink my teeth into technical research or problem-solving. I am also a very helpful and easy-going person, very willing to help others to solve problems, and good at interpersonal communication and cooperation with others to solve problems. What's more, I am progressive-minded, in tune with new developments in my field, and always keep my mind open to learning new things.
+Hui Feng is a student who is studying at CMU Entertainment Technology center. 
+
+I am a capable and consistent problem-solver who is very willing to sink my teeth into technical research or problem-solving. I am also a very helpful and easy-going person, very willing to help others to solve problems, and good at interpersonal communication and cooperation with others to solve problems. What's more, I am progressive-minded, in tune with new developments in my field, and always keep my mind open to learning new things.
+
 here are my skillsets:
 
 ◎Good command of C# code writing and the realization of in-game rendering effects.
