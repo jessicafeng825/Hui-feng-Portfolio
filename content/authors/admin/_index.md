@@ -40,7 +40,7 @@ social:
 
 - icon: cv  # Alternatively, use `google-scholar` icon from `ai` icon pack
   icon_pack: ai
-  link: uploads/Resume-HUI-FENG1.pdf
+  link: uploads/Hui_Feng_Technical_Artist.pdf
 - icon: github
   icon_pack: fab
   link: https://github.com/jessicafeng825
@@ -65,20 +65,21 @@ email: ""
 highlight_name: true
 ---
 
-Hui Feng is a student who is studying at CMU Entertainment Technology center.
+Hui Feng is a student who is studying at CMU Entertainment Technology center. I am a capable and consistent problem-solver who is very willing to sink my teeth into technical research or problem-solving. I am also a very helpful and easy-going person, very willing to help others to solve problems, and good at interpersonal communication and cooperation with others to solve problems. What's more, I am progressive-minded, in tune with new developments in my field, and always keep my mind open to learning new things.
+here are my skillsets:
 
--Good command of C# code writing and the realization of in-game rendering effects.
+◎Good command of C# code writing and the realization of in-game rendering effects.
 
--Hands-on experiences in  commercial game engines,especially Unity.
+◎Hands-on experiences in  commercial game engines,especially Unity.
 
--Familiar with C++ language foundation, including related knowledge of object-oriented and container.
+◎Familiar with C++ language foundation, including related knowledge of object-oriented and container.
 
--Great understanding of the relevant knowledge and algorithms of computer graphics, such as rendering pipelines, shaders, etc.
+◎Great understanding of the relevant knowledge and algorithms of computer graphics, such as rendering pipelines, shaders, etc.
 
--Proficient in using the shader language of CG and HLSL, such as the writing of CG under the unity build-in pipeline, and the writing of HLSL under the unity URP pipeline. Understand the basics of GLSL language.
+◎Proficient in using the shader language of CG and HLSL, such as the writing of CG under the unity build-in pipeline, and the writing of HLSL under the unity URP pipeline. Understand the basics of GLSL language.
 
--Great understanding of PBR principle and texturing.
+◎Great understanding of PBR principle and texturing.
 
--Experience using Substance Designer and Photoshop.
+◎Experience using Substance Designer and Photoshop.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Hui_Feng_Technical_Artist.pdf" "newtab" >}}resumé{{< /staticref >}}.
