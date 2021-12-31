@@ -34,8 +34,6 @@ url_video: ""
 I Realize the rain ripples and puddle effect ,including puddles, flowing water, ripples of raindrops falling on the water surface and on a wet surface.
 
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/2.png" >}}
-
 
 Mask is used to control the scope of the water puddle; the water flow Wave uses two layers of wave normals to superimpose the flow; 
 
@@ -217,6 +215,94 @@ Distortion-Controls the degree of distortion caused by ripples. This attribute i
 Use Ao From Main Properties: Whether to use the AO amount in Main Properties to the puddle.
 
 Use Emission From Main Properties: Whether to use the Emission amount in Main Properties to the puddle.
+
+
+Main principles and processes
+
+1. Bump Map calculation
+
+Vert(): Calculate Bump map, Height Map UV offset.
+
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/9.png" >}}
+
+
+Frag(): sample Bump Map, height Map, and integrate to get a new normal result.
+
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/10.png" >}}
+
+
+2、Calculate the water flow/water effect of water accumulation
+
+
+Vert(): Calculate the offset of Main Wave,Detail Wave, you can set the flow direction, Tiling and speed of each water flow.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/11.png" >}}
+
+
+Frag(): sampling water flow Normal Map according to the normal intensity, determine whether to use Main Wave or Detail Wave, mix the results of the two.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/12.png" >}}
+
+
+
+3、Calculate the ripple effect of raindrops
+
+
+Vert(): use texture atlas to make ripple sequence map animation, calculate the offset of the ranks and columns respectively, as well as calculate the corresponding Tiling coordinates, so we can get the current texture coordinates.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/13.png" >}}
+
+Frag(): sampling, get the Normal of the first layer of rain ripples.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/14.png" >}}
+
+
+4、Calculate the second layer of rain ripple map
+Vert(): Set the offset and tiling of the second layer of rain.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/15.png" >}}
+
+
+Frag():
+Sample and mix the previous result and the two layers of rain normal.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/16.png" >}}
+
+Mix the main Normal and the current result.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/17.png" >}}
+
+
+Output Normal result
+
+
+
+5. Adjust the saturation and output the Albedo result.
+
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/18.png" >}}
+
+
+
+Perform Emission, Metallic calculations
+
+
+6. Calculate the raindrop effect on the wet surface.
+
+
+Use Voronoi algorithm to calculate the position of the raindrop, sample the gradient map to control the appearance and disappearance, use Step to control the abrupt change of the value and control it in the range of 0-1. Also consider the effect of smoothness and puddle Mask, output Smoothness.
+
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/9.png" >}}
+
+
+
+Perform PBR lighting calculation.
+
+
+
 
 
 
