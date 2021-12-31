@@ -5,9 +5,9 @@
 
 # Appearance
 
-theme: rose
+theme: apogee
 day_night: false
-font: 'cyperpubk'
+font: ''
 font_size: L
 
 # SEO
