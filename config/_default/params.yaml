@@ -5,9 +5,9 @@
 
 # Appearance
 
-theme: dark
+theme: rose
 day_night: false
-font: ''
+font: 'cyperpubk'
 font_size: L
 
 # SEO
