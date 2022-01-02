@@ -44,6 +44,8 @@ When rendering snow, it is divided into upper snow and lower snow materials to b
 This picture is the shader property panel of Snow：
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/1.jpg" >}}
 
+Also,use shaderGUI() to adjust the shader properties panel for ease of use by other artists.
+
 
 2.Updating the displacement texture
 
@@ -72,4 +74,4 @@ The algorithm use the difference between the average of the surrounding texel wi
 
 
 
-involved technology: Unity Shader、C#
+involved technology: Unity Shader、C#、shaderGUI()
