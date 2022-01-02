@@ -2,7 +2,7 @@
 title: Rain ripples and puddle effect
 summary: This project was completed during my internship in tencent games.For the project that i am working with, i realized the rain ripples and puddle effect,including puddles, flowing water, ripples of raindrops falling on the water surface and on a wet surface.
 tags:
-- Unity Shader
+- Unity shader
 
 
 date: "2021-08-20T16:24:00Z"
