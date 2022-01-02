@@ -2,7 +2,7 @@
 title: Toon shader framework for character and environment
 summary: This project was completed during my internship in tencent games. it is also a trianing assignment for shader framework. At the same time, i need to build the shader framework, complete the demo containing the environment and the character, and package it to the mobile phone to run.
 tags:
-- Unity Shader
+- Unity shader
 - Computer Graphics
 
 date: "2021-07-10T16:24:00Z"
