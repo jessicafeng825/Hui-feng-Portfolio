@@ -85,4 +85,4 @@ here are my skillsets:
 
 ◎Experience using Substance Designer and Photoshop.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Hui_Feng_Technical_Artist.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/Hui_Feng_Technical_Artist.pdf" "newtab" >}}resume{{< /staticref >}} here.
