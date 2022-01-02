@@ -32,11 +32,11 @@ experience:
     description: |2-
        Responsibilities include:
         
-        -Use PBR rendering model for character rendering, such as skin and eyeball rendering
+        ◎Use PBR rendering model for character rendering, such as skin and eyeball rendering
         
-        -Modify the rendering pipeline of the project to improve the rendering performance and quality of the project
+        ◎Modify the rendering pipeline of the project to improve the rendering performance and quality of the project
         
-        -Fix rendering errors in the project, improve rendering performance
+        ◎Fix rendering errors in the project, improve rendering performance
         
   - title: Technical Artist
     company: Kingsoft
@@ -48,13 +48,13 @@ experience:
     description: |2
        Responsibilities include:
         
-        -Research on water shading related technologies and develop offline FFT water.
+        ◎Research on water shading related technologies and develop offline FFT water.
         
-        -Develop an analysis and debugging tool for the Overdraw rate of the mobile game terminal.
+        ◎Develop an analysis and debugging tool for the Overdraw rate of the mobile game terminal.
         
-        -Use Snapdragon Profiler to reproduce and analyze the effects of mobile games.
+        ◎Use Snapdragon Profiler to reproduce and analyze the effects of mobile games.
         
-        -Achieve the character cartoon rendering outline, cel shading, and multi-light source shadows under the URP pipeline.
+        ◎Achieve the character cartoon rendering outline, cel shading, and multi-light source shadows under the URP pipeline.
 
 design:
   columns: '2'
