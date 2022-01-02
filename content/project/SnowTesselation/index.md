@@ -2,7 +2,7 @@
 title: Interactive snow Effect with footprints and tracks
 summary: This project was finished during my internship in tencent games. For the game project that i was working with to achieve the needs of the dynamic interactive snow effect of the characters stepping on the snow, mainly the realization of snow material rendering, trajectory and footprints.
 tags:
-- Unity Shader
+- Unity shader
 - Computer Graphics
 
 date: "2021-08-10T16:24:00Z"
