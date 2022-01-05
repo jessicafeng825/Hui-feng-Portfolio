@@ -47,10 +47,10 @@ the raindrop effect uses the Voronoi algorithm to calculate the location of the 
 
 Use PBR shading in unity URP pipeline and PBR textures.
 
-## Heading 1
-Shader parameter attributes:
-## Heading 2
-1. Main Properties
+# Shader parameter attributes:
+
+## 1. Main Properties
+
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
 
@@ -91,8 +91,9 @@ Emission Color: Specify the Emission color.
 Emission Map: Select Emission Map.
 
 Intensity: Emission degree.
-## Heading 2
-2. Mask Properties : Mask attribute used to control the puddle
+
+## 2. Mask Properties : Mask attribute used to control the puddle
+
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/4.png" >}}
 
@@ -114,8 +115,8 @@ When spread is -1, the mask of the puddle is all white and becomes a water surfa
 
 The larger the spread, the less water will become.
 
-## Heading 2
-3. Reflection Properties
+## 3. Reflection Properties
+
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/5.png" >}}
@@ -131,8 +132,8 @@ Blur: Specify the degree of blur.
 
 Use Main Normal Map as Normal Direction:Whether to use the principal normal direction as the reflection direction. Used to simulate the effect of wet soil on the edge of a puddle when there is less water.
 
-## Heading 2
-4. Rain Dots : this properties is used for raindrop effects on wet surfaces.
+## 4. Rain Dots : this properties is used for raindrop effects on wet surfaces.
+
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/6.png" >}}
 
@@ -146,8 +147,7 @@ Splash Speed: Control the speed of raindrops.
 
 Size: Control the size of each raindrop.
 
-## Heading 2
-5. Puddles Properties : this properties is used to control the properties of puddles.
+## 5. Puddles Properties : this properties is used to control the properties of puddles.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/7.png" >}}
 
@@ -184,8 +184,7 @@ Speed: Detail Wave movement speed.
 
 Rotation: Detail Wave flow direction angle.
 
-## Heading 2
-6. Rain Ripples : this properties control rain ripple properties
+## 6. Rain Ripples : this properties control rain ripple properties
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/8.png" >}}
@@ -218,11 +217,11 @@ Use Ao From Main Properties: Whether to use the AO amount in Main Properties to 
 
 Use Emission From Main Properties: Whether to use the Emission amount in Main Properties to the puddle.
 
-## Heading 1
-Main principles and processes
+# Main principles and processes
 
-## Heading 2
-1. Bump Map calculation
+
+## 1. Bump Map calculation
+
 
 Vert(): Calculate Bump map, Height Map UV offset.
 
@@ -235,8 +234,7 @@ Frag(): sample Bump Map, height Map, and integrate to get a new normal result.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/10.png" >}}
 
-## Heading 2
-2、Calculate the water flow/water effect of water accumulation
+## 2、Calculate the water flow/water effect of water accumulation
 
 
 Vert(): Calculate the offset of Main Wave,Detail Wave, you can set the flow direction, Tiling and speed of each water flow.
@@ -249,8 +247,7 @@ Frag(): sampling water flow Normal Map according to the normal intensity, determ
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/12.png" >}}
 
 
-## Heading 2
-3、Calculate the ripple effect of raindrops
+## 3、Calculate the ripple effect of raindrops
 
 
 Vert(): use texture atlas to make ripple sequence map animation, calculate the offset of the ranks and columns respectively, as well as calculate the corresponding Tiling coordinates, so we can get the current texture coordinates.
@@ -261,8 +258,8 @@ Frag(): sampling, get the Normal of the first layer of rain ripples.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/14.png" >}}
 
-## Heading 2
-4、Calculate the second layer of rain ripple map
+## 4、Calculate the second layer of rain ripple map
+
 Vert(): Set the offset and tiling of the second layer of rain.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/15.png" >}}
@@ -281,8 +278,7 @@ Mix the main Normal and the current result.
 Output Normal result
 
 
-## Heading 2
-5. Adjust the saturation and output the Albedo result.
+## 5. Adjust the saturation and output the Albedo result.
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/18.png" >}}
@@ -291,8 +287,8 @@ Output Normal result
 
 Perform Emission, Metallic calculations
 
-## Heading 2
-6. Calculate the raindrop effect on the wet surface.
+## 6. Calculate the raindrop effect on the wet surface.
+
 
 
 Use Voronoi algorithm to calculate the position of the raindrop, sample the gradient map to control the appearance and disappearance, use Step to control the abrupt change of the value and control it in the range of 0-1. Also consider the effect of smoothness and puddle Mask, output Smoothness.
