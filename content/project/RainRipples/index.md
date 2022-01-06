@@ -45,7 +45,7 @@ I implemented the **rain ripples and puddle effect** ,including **puddles, flowi
 {{< hl >}} Mask {{< hl >}} is used to control the scope of the water puddle; For the water flow wave,i uses two layers of wave normals to superimpose the flow normal; 
 
 
-the water ripple uses the texture atlas to make the sequence frame animation, and the two layers of ripples are mixed; 
+the water ripple uses the **texture atlas** to make the sequence frame animation, and the two layers of ripples are mixed; 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/2.png" >}}
 
@@ -53,7 +53,7 @@ the water ripple uses the texture atlas to make the sequence frame animation, an
 the raindrop effect uses the **Voronoi algorithm** to calculate the location of the raindrop , Sampling gradient map controls the appearance and disappearance. 
 
 
-Use **PBR shading** in unity URP pipeline and PBR textures.
+Use **PBR shading** in unity URP pipeline and **PBR textures**.
 
 
 # Shader parameter attributes:
@@ -64,13 +64,13 @@ Use **PBR shading** in unity URP pipeline and PBR textures.
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
 
 
-Global Setting-XY-ZW: Control the **Tiling and offset of all textures in Main Properties.
+**Global Setting-XY-ZW:** Control the **Tiling and offset of all textures in Main Properties.
 
-Color: The color of Albedo.
+**Color:** The color of Albedo.
 
-Invert Alpha: Whether to **invert the A channel of the Albedo texture**.
+**Invert Alpha:** Whether to **invert the A channel of the Albedo texture**.
 
-Albedo Color (Mask in A): **Store Albedo Map**. Channel A can be used to store the Mask or Smoothness Map of the puddle.
+**Albedo Color (Mask in A):** **Store Albedo Map**. Channel A can be used to store the Mask or Smoothness Map of the puddle.
 
 Saturation: Control the saturation or desaturation of the Albedo texture.
 
