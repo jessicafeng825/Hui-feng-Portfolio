@@ -30,7 +30,7 @@ url_video: ""
 
 ---
 
-### ***involved technology: Unity Shader、C#、shaderGUI()***
+### ***{{< hl >}}involved technology: Unity Shader、C#、shaderGUI(){{< hl >}}***
 
 
 
@@ -55,69 +55,70 @@ the raindrop effect uses the **Voronoi algorithm** to calculate the location of 
 
 Use **PBR shading** in unity URP pipeline and PBR textures.
 
-# {{< hl >}} Shader parameter attributes:{{< hl >}}
+# Shader parameter attributes:
 
 ## 1. Main Properties
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
 
-**Global Setting-XY-ZW:** Control the Tiling and offset of all textures in Main Properties.
 
-**Color:** The color of Albedo.
+Global Setting-XY-ZW: Control the **Tiling and offset of all textures in Main Properties.
 
-**Invert Alpha:** Whether to invert the A channel of the Albedo texture.
+Color: The color of Albedo.
 
-**Albedo Color (Mask in A):** Store Albedo Map. Channel A can be used to store the Mask or Smoothness Map of the puddle.
+Invert Alpha: Whether to **invert the A channel of the Albedo texture**.
 
-**Saturation:** Control the saturation or desaturation of the Albedo texture.
+Albedo Color (Mask in A): **Store Albedo Map**. Channel A can be used to store the Mask or Smoothness Map of the puddle.
 
-**Brightness:** Control the brightness of the Albedo texture.
+Saturation: Control the saturation or desaturation of the Albedo texture.
 
-**Normal Map:** Select the normal map to be used.
+Brightness: Control the brightness of the Albedo texture.
 
-**Normal Intensity:** The unevenness of the Normal map.
+Normal Map: Select the normal map to be used.
 
-**Metallic Map (Smoothness A):** Select the Metallic map to be used. The smoothness map is placed in the A channel.
+Normal Intensity: The unevenness of the Normal map.
 
-**Metallic:** Metallic degree.
+Metallic Map (Smoothness A): Select the Metallic map to be used. The smoothness map is placed in the A channel.
 
-**Smoothness:** Smoothness.
+Metallic: Metallic degree.
 
-**Source:** Select whether Smoothness is to use the image stored in the A channel of Albedo or Metallic.
+Smoothness: Smoothness.
 
-**Height Map:** Select Height Map.
+Source: Select whether Smoothness is to use the image stored in the A channel of Albedo or Metallic.
+
+Height Map: Select Height Map.
  
-**Height Scale:** Control the degree of Height Map.
+**Height Scale: Control the degree of Height Map.
 
-**Ambient Occlusion Map:** Select Ao map.
+Ambient Occlusion Map: Select Ao map.
 
-**Ao Intensity:** Control the degree of AO texture.
+Ao Intensity: Control the degree of AO texture.
 
-**Emission Color:** Specify the Emission color.
+Emission Color: Specify the Emission color.
  
-**Emission Map:** Select Emission Map.
+Emission Map: Select Emission Map.
 
-**Intensity:** Emission degree.
+Intensity: Emission degree.
 
 ## 2. Mask Properties : Mask attribute used to control the puddle
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/4.png" >}}
 
-**Visualize Mask:** Whether to visualize the Mask.
+Visualize Mask: Whether to visualize the Mask.
 
-**Source:** Whether to use Albedo A channel as an additional Mask.
+Source: Whether to use Albedo A channel as an additional Mask.
 
-**Invert Mask:** Whether to invert the A channel of the Detail Mask.
+Invert Mask: Whether to invert the A channel of the Detail Mask.
 
-**Detail Mask:** Select a Detail Mask. If a map is not selected, it will be a black map. Black means no puddles.
+Detail Mask: Select a Detail Mask. If a map is not selected, it will be a black map. Black means no puddles.
 
-**Intensity:** Control the level of detail in the puddle.
+Intensity: Control the level of detail in the puddle.
 
-**Contras:** Control the black and white contrast ratio of the detail mask.
+Contras: Control the black and white contrast ratio of the detail mask.
 
-**Spread:** Control the range of puddles. It can be used as an animation to simulate the gradual increase of water in the rain puddle.
+Spread: Control the range of puddles. It can be used as an animation to simulate the gradual increase of water in the rain puddle.
 
 When spread is -1, the mask of the puddle is all white and becomes a water surface.
 
@@ -130,74 +131,74 @@ The larger the spread, the less water will become.
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/5.png" >}}
 
 
-**Color:** Specify the color of the reflection.
+Color: Specify the color of the reflection.
 
-**Cubemap:** Choose a cubemap.
+Cubemap: Choose a cubemap.
 
-**Intensity:** Control the intensity of reflections.
+Intensity: Control the intensity of reflections.
 
-**Blur:** Specify the degree of blur.
+Blur: Specify the degree of blur.
 
-**Use Main Normal Map as Normal Direction:** Whether to use the principal normal direction as the reflection direction. Used to simulate the effect of wet soil on the edge of a puddle when there is less water.
+Use Main Normal Map as Normal Direction: Whether to use the principal normal direction as the reflection direction. Used to simulate the effect of wet soil on the edge of a puddle when there is less water.
 
-## 4. Rain Dots : this properties is used for raindrop effects on wet surfaces.
+## 4.Rain Dots : this properties is used for raindrop effects on wet surfaces.
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/6.png" >}}
 
-**Gradient Tex:** Control the visibility of raindrops, corresponding from left to right, the ones that have just fallen appear to disappear.
+Gradient Tex: Control the visibility of raindrops, corresponding from left to right, the ones that have just fallen appear to disappear.
 
-**Intensity:** Control the degree of visibility of raindrops.
+Intensity: Control the degree of visibility of raindrops.
 
-**Tiling:** Tiling that controls raindrops.
+Tiling: Tiling that controls raindrops.
 
-**Splash Speed:** Control the speed of raindrops.
+Splash Speed: Control the speed of raindrops.
 
-**Size:** Control the size of each raindrop.
+Size: Control the size of each raindrop.
 
-## 5. Puddles Properties : this properties is used to control the properties of puddles.
+## 5.Puddles Properties : this properties is used to control the properties of puddles.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/7.png" >}}
 
 
-**Color:** Specify the color of the puddle.
+Color: Specify the color of the puddle.
 
-**Use Main Base Color Map:** Whether to use the main color (Albedo color) as the basic color of the puddle.
+Use Main Base Color Map: Whether to use the main color (Albedo color) as the basic color of the puddle.
 
-**Base Color:** The basic color of the puddle (Albedo color).
+Base Color: The basic color of the puddle (Albedo color).
 
-**Saturation:** Control the saturation or desaturation of the Albedo texture.
+Saturation: Control the saturation or desaturation of the Albedo texture.
 
-**Brightness:** Control the brightness of the Albedo texture. 
+Brightness: Control the brightness of the Albedo texture. 
 
-**Blend Main Normal:** Whether to blend Main Normal Map and Wave Normal Map.
+Blend Main Normal: Whether to blend Main Normal Map and Wave Normal Map.
 
-**Wave Normal Map:** select Wave Normal Map
+Wave Normal Map: select Wave Normal Map
 
-**Main Wave:** Whether to open Main Wave water flow
+Main Wave: Whether to open Main Wave water flow
 
-**Intensity:** The degree of unevenness of the Main Wave.
+Intensity: The degree of unevenness of the Main Wave.
 
-**Speed:** Main Wave moving speed.
+Speed: Main Wave moving speed.
 
-**Rotation:** Main Wave flow direction angle.
+Rotation: Main Wave flow direction angle.
 
-**Tiling:** Tiling of Main Wave.
+Tiling: Tiling of Main Wave.
 
-**Detail Wave:** Whether to enable the second layer of superimposed flow Detail Wave.
+Detail Wave: Whether to enable the second layer of superimposed flow Detail Wave.
 
-**Intensity:** The degree of unevenness of the Detail Wave.
+Intensity: The degree of unevenness of the Detail Wave.
 
-**Speed:** Detail Wave movement speed.
+Speed: Detail Wave movement speed.
 
-**Rotation:** Detail Wave flow direction angle.
+Rotation: Detail Wave flow direction angle.
 
-## 6. Rain Ripples : this properties control rain ripple properties
+## 6.Rain Ripples : this properties control rain ripple properties
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/8.png" >}}
 
-**X(Columns)-Y(Rows)-Z(Speed)-W(Strart Frame)-** Specify the number of columns and rows of the normal map of the selected texture atlas.
+X(Columns)-Y(Rows)-Z(Speed)-W(Strart Frame)- Specify the number of columns and rows of the normal map of the selected texture atlas.
 
 For example, the RainRipples 02_Atlas_Normal texture used by default is an atlas with **64 textures (64 cells = 8 columns x 8 rows)**.
 The Z value represents **the speed of the animation**.
@@ -228,7 +229,7 @@ The value of W determines the start time. For example, the RainRipples 02_Atlas_
 # {{< hl >}} Main principles and processes{{< hl >}}
 
 
-## 1. Bump Map calculation
+## 1.Bump Map calculation
 
 
 **Vert(): Calculate Bump map, Height Map UV offset.
@@ -242,7 +243,7 @@ The value of W determines the start time. For example, the RainRipples 02_Atlas_
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/10.png" >}}
 
-## 2、Calculate the water flow/water effect of water accumulation
+## 2.Calculate the water flow/water effect of water accumulation
 
 
 **Vert(): Calculate the offset of Main Wave,Detail Wave, you can set the flow direction, Tiling and speed of each water flow.
@@ -255,7 +256,7 @@ The value of W determines the start time. For example, the RainRipples 02_Atlas_
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/12.png" >}}
 
 
-## 3、Calculate the ripple effect of raindrops
+## 3.Calculate the ripple effect of raindrops
 
 
 **Vert(): use texture atlas to make ripple sequence map animation, calculate the offset of the ranks and columns respectively, as well as calculate the corresponding Tiling coordinates, so we can get the current texture coordinates.
@@ -266,7 +267,7 @@ The value of W determines the start time. For example, the RainRipples 02_Atlas_
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/14.png" >}}
 
-## 4、Calculate the second layer of rain ripple map
+## 4.Calculate the second layer of rain ripple map
 
 **Vert(): Set the offset and tiling of the second layer of rain.
 
@@ -286,7 +287,7 @@ Mix the main Normal and the current result.
 Output Normal result
 
 
-## 5. Adjust the saturation and output the Albedo result.
+## 5.Adjust the saturation and output the Albedo result.
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/18.png" >}}
@@ -295,7 +296,7 @@ Output Normal result
 
 Perform Emission, Metallic calculations
 
-## 6. Calculate the raindrop effect on the wet surface.
+## 6.Calculate the raindrop effect on the wet surface.
 
 
 
