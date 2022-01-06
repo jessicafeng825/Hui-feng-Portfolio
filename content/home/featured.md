@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 63
 
-title: Featured Publications
-subtitle: ""
+title: Featured Post
+subtitle: "Demo Reel"
 
 content:
   # Page type to display. E.g. post, talk, publication...
