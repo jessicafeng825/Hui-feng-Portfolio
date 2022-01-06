@@ -30,7 +30,7 @@ url_video: ""
 
 ---
 
-### ***{{< hl >}}involved technology: Unity Shader、C#、shaderGUI(){{< hl >}}***
+### {{< hl >}}involved technology: Unity Shader、C#、shaderGUI(){{< hl >}}
 
 
 
@@ -57,7 +57,7 @@ Use **PBR shading** in unity URP pipeline and PBR textures.
 
 # Shader parameter attributes:
 
-## 1. Main Properties
+## 1.Main Properties
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
@@ -101,7 +101,7 @@ Emission Map: Select Emission Map.
 
 Intensity: Emission degree.
 
-## 2. Mask Properties : Mask attribute used to control the puddle
+## 2.Mask Properties : Mask attribute used to control the puddle
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/4.png" >}}
@@ -124,8 +124,7 @@ When spread is -1, the mask of the puddle is all white and becomes a water surfa
 
 The larger the spread, the less water will become.
 
-## 3. Reflection Properties
-
+## 3.Reflection Properties
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/5.png" >}}
@@ -246,12 +245,12 @@ The value of W determines the start time. For example, the RainRipples 02_Atlas_
 ## 2.Calculate the water flow/water effect of water accumulation
 
 
-**Vert(): Calculate the offset of Main Wave,Detail Wave, you can set the flow direction, Tiling and speed of each water flow.
+Vert(): Calculate the offset of Main Wave,Detail Wave, you can set the flow direction, Tiling and speed of each water flow.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/11.png" >}}
 
 
-**Frag(): sampling water flow Normal Map according to the normal intensity, determine whether to use Main Wave or Detail Wave, mix the results of the two.
+Frag(): sampling water flow Normal Map according to the normal intensity, determine whether to use Main Wave or Detail Wave, mix the results of the two.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/12.png" >}}
 
@@ -259,22 +258,22 @@ The value of W determines the start time. For example, the RainRipples 02_Atlas_
 ## 3.Calculate the ripple effect of raindrops
 
 
-**Vert(): use texture atlas to make ripple sequence map animation, calculate the offset of the ranks and columns respectively, as well as calculate the corresponding Tiling coordinates, so we can get the current texture coordinates.
+Vert(): use texture atlas to make ripple sequence map animation, calculate the offset of the ranks and columns respectively, as well as calculate the corresponding Tiling coordinates, so we can get the current texture coordinates.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/13.png" >}}
 
-**Frag(): sampling, get the Normal of the first layer of rain ripples.
+Frag(): sampling, get the Normal of the first layer of rain ripples.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/14.png" >}}
 
 ## 4.Calculate the second layer of rain ripple map
 
-**Vert(): Set the offset and tiling of the second layer of rain.
+Vert(): Set the offset and tiling of the second layer of rain.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/15.png" >}}
 
 
-**Frag():
+Frag():
 Sample and mix the previous result and the two layers of rain normal.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/16.png" >}}
