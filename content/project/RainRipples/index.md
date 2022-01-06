@@ -30,7 +30,7 @@ url_video: ""
 
 ---
 
-{{< hl >}}involved technology: Unity Shader、C#、shaderGUI(){{< hl >}}
+### involved technology: Unity Shader、C#、shaderGUI()
 
 
 
@@ -54,6 +54,7 @@ the raindrop effect uses the **Voronoi algorithm** to calculate the location of 
 
 
 Use **PBR shading** in unity URP pipeline and PBR textures.
+
 
 # Shader parameter attributes:
 
