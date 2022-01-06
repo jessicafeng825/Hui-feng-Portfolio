@@ -138,6 +138,10 @@ When spread is -1, **the mask of the puddle is all white and becomes a water sur
 
 The larger the spread, the less water will become.
 
+{{< hl >}}
+
+
+{{< hl >}}
 ## 3.Reflection Properties
 
 
@@ -154,6 +158,11 @@ The larger the spread, the less water will become.
 
 **Use Main Normal Map as Normal Direction:** Whether to use the principal normal direction as the reflection direction. Used to simulate the effect of wet soil on the edge of a puddle when there is less water.
 
+{{< hl >}}
+
+
+{{< hl >}}
+
 ## 4.Rain Dots : this properties is used for raindrop effects on wet surfaces.
 
 
@@ -168,6 +177,11 @@ The larger the spread, the less water will become.
 **Splash Speed:** Control the speed of raindrops.
 
 **Size:** Control the size of each raindrop.
+
+{{< hl >}}
+
+
+{{< hl >}}
 
 ## 5.Puddles Properties : this properties is used to control the properties of puddles.
 
@@ -206,6 +220,11 @@ The larger the spread, the less water will become.
 
 **Rotation:** Detail Wave flow direction angle.
 
+{{< hl >}}
+
+
+{{< hl >}}
+
 ## 6.Rain Ripples : this properties control rain ripple properties
 
 
@@ -242,6 +261,7 @@ _The value of W determines the start time. For example, the RainRipples 02_Atlas
 {{< hl >}}
 
 
+
 {{< hl >}}
 # Main principles and processes
 
@@ -260,6 +280,10 @@ _The value of W determines the start time. For example, the RainRipples 02_Atlas
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/10.png" >}}
 
+{{< hl >}}
+
+
+{{< hl >}}
 ## 2.Calculate the water flow/water effect of water accumulation
 
 
@@ -272,6 +296,10 @@ _The value of W determines the start time. For example, the RainRipples 02_Atlas
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/12.png" >}}
 
+{{< hl >}}
+
+
+{{< hl >}}
 
 ## 3.Calculate the ripple effect of raindrops
 
@@ -283,6 +311,11 @@ _The value of W determines the start time. For example, the RainRipples 02_Atlas
 **Frag():** sampling, get the Normal of the first layer of rain ripples.
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/14.png" >}}
+
+{{< hl >}}
+
+
+{{< hl >}}
 
 ## 4.Calculate the second layer of rain ripple map
 
@@ -303,6 +336,10 @@ Mix the main Normal and the current result.
 
 Output Normal result
 
+{{< hl >}}
+
+
+{{< hl >}}
 
 ## 5.Adjust the saturation and output the Albedo result.
 
@@ -312,6 +349,11 @@ Output Normal result
 
 
 Perform Emission, Metallic calculations
+
+{{< hl >}}
+
+
+{{< hl >}}
 
 ## 6.Calculate the raindrop effect on the wet surface.
 
