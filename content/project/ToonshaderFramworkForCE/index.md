@@ -6,6 +6,7 @@ tags:
 - Computer Graphics
 
 date: "2021-07-10T16:24:00Z"
+authors: ["admin"]
 featured: true
 # Optional external URL for project (replaces project detail page).
 external_link: ""
