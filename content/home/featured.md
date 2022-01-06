@@ -1,7 +1,7 @@
 ---
 # An instance of the Featured widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: featured
+widget: portfolio
 
 # This file represents a page section.
 headless: true
@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 63
 
-title: Featured Post
-subtitle: "Demo Reel"
+title: Demo Reel
+subtitle: "Featured Post"
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -27,10 +27,11 @@ content:
   order: desc
 
 design:
+  columns: '2'
   # Choose a view for the listings:
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 1
+  view: 2
 ---
