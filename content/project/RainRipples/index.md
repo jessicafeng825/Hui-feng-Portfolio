@@ -57,6 +57,12 @@ the raindrop effect uses the **Voronoi algorithm** to calculate the location of 
 
 Use **PBR shading** in unity URP pipeline and **PBR textures**.
 
+{{< hl >}}
+
+
+
+
+{{< hl >}}
 
 # Shader parameter attributes:
 
@@ -66,7 +72,7 @@ Use **PBR shading** in unity URP pipeline and **PBR textures**.
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/RainRipples/3.png" >}}
 
 
-**Global Setting-XY-ZW:** Control the **Tiling and offset of all textures in Main Properties.
+**Global Setting-XY-ZW:** Control the **Tiling and offset** of all textures in Main Properties.
 
 **Color:** The color of Albedo.
 
@@ -103,6 +109,11 @@ Use **PBR shading** in unity URP pipeline and **PBR textures**.
 **Emission Map:** Select Emission Map.
 
 **Intensity:** Emission degree.
+
+{{< hl >}}
+
+
+{{< hl >}}
 
 ## 2.Mask Properties : Mask attribute used to control the puddle
 
