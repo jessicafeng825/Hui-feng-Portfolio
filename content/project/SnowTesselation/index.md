@@ -48,7 +48,12 @@ The dynamic interactive snow effect includes **the rendering of snow material** 
 # Rendering of the Snow
 
 
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/3.jpg" >}}
+
+
 The Snow is using **PBR shaing and PBR textures**,including Albedo, Normal, Metallic, Roughness, Ambient Occlusion, Emission Maps. 
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/4.png" >}}
 
 What's more , Metallic, Roughness, Ambient Occlusion, Emission Maps are compressed into one picture, respectively in the RGBA channel.
 
@@ -66,27 +71,55 @@ Also,use shaderGUI() to adjust the shader properties panel for ease of use by ot
 
 # Updating the displacement texture
 
-Place an **orthogonal camera** under the snow to shoot from bottom to top, use a material with a **replacement shader** to **_record and accumulate depth in each frame_** , set up **shadertags**  for two different objects (Eg.ground and people), depending on the different shader tag to record different object depths.
+Place an **orthogonal camera** under the snow to shoot from bottom to top
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/5.png" >}}
 
 
+At the same time, use a **heightmap** to control the initial height of the snow, and at the same time as the initial value of the Displacement Render Texture. use Blit() to blit with the initial heightmap to get the initial snow height.
 
-At the same time, use a **heightmap** to control the initial height of the snow, and at the same time as the initial value of the Displacement Render Texture.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/6.png" >}}
+
+
+use a material with a **replacement shader** to **_record and accumulate depth in each frame_** , set up **shadertags**  for two different objects (Eg.ground and people), depending on the different shader tag to record different object depths.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/7.png" >}}
 
 We create the two render texture we'll need each frame,RT1 and RT2. We will setup the **target texture** and pass the right target texture from camera to the shader **according to the flag(a bool variable)**. For Each frame we **swap the target texture to always keep the result of the shader.**
 
-{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/3.jpg" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/8.png" >}}
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/9.png" >}}
 
 after rendering (in the OnPostRender() function)we will use **blit() to blit the first RT in the second RT to get the tracks depth texture and switch the flag.**
 
-Set the replacement shader to update the **depth map** and output a **Displacement Render Texture** 
-
-Perform **vertex offset and change the Normal Map** of the snow material according to Displacement RT. 
-
-Set the surface **subdivision parameters**, perform **mesh subdivision**, and rewrite the surface subdivision function. This is used in the Build-in shader to increase model details. At the same time, a smoothing algorithm is used to smooth the area between the upper and the bottom.
-
-The algorithm use the difference between the average of the surrounding texel with the current pixel to lerp between them to achieve the smoothing.
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/10.png" >}}
 
 
+Set the replacement shader to update the **depth map** and output a **Displacement Render Texture** and then calculate the new height in the ReciveDepth.shader file which will be using as replacement shader.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/11.png" >}}
+
+
+Perform **vertex offset and change the Normal Map** of the snow material according to Displacement RT in the material render shader.
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/12.png" >}}
+
+Set the surface **subdivision parameters**, perform **mesh subdivision**, and rewrite the surface subdivision function. This is used in the Build-in shader to increase model details.(this will be perfromed in the material render shader)
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/13.png" >}}
+
+At the same time, a smoothing algorithm is used to smooth the area between the upper and the bottom.The algorithm use the difference between the average of the surrounding texel with the current pixel to lerp between them to achieve the smoothing.(this will be perfromed in the replacement shader while we are calculating the height map)
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/14.png" >}}
+
+Perfrom PBR Lighting calculation in vert and frag in the material render shader.
+
+Part of the code AS show：
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/15.png" >}}
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/SnowTesselation/16.png" >}}
 
 
 
