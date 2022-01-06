@@ -39,7 +39,7 @@ url_video: ""
 
 
 
-I implemented the **rain ripples and puddle effect** ,including **puddles, flowing water, ripples of raindrops falling on the water surface and on a wet surface**.
+I implemented the **rain ripples and puddle effect**{style="color: #d9fcff"} ,including **puddles, flowing water, ripples of raindrops falling on the water surface and on a wet surface**.
 
 
 Mask is used to control the scope of the water puddle; For the water flow wave,i uses two layers of wave normals to superimpose the flow normal; 
