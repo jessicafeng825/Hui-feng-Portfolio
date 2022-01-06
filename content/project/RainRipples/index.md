@@ -239,7 +239,11 @@ _The value of W determines the start time. For example, the RainRipples 02_Atlas
 
 **Use Emission From Main Properties:** Whether to use the Emission amount in Main Properties to the puddle.
 
-# {{< hl >}} Main principles and processes{{< hl >}}
+{{< hl >}}
+
+
+{{< hl >}}
+# Main principles and processes
 
 
 ## 1.Bump Map calculation
