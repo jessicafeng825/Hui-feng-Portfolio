@@ -36,12 +36,15 @@ url_video: ""
 
 {{< youtube J1PYLiR9Mpk >}}
 
+{{< hl >}}
 
 
+{{< hl >}}
 
 I implemented the **rain ripples and puddle effect** ,including **puddles, flowing water, ripples of raindrops falling on the water surface and on a wet surface**.
 
-Mask is used to {{< hl >}}control the scope of the water puddle{{< hl >}}; For the water flow wave,i uses two layers of wave normals to superimpose the flow normal; 
+
+Mask is used to control the scope of the water puddle; For the water flow wave,i uses two layers of wave normals to superimpose the flow normal; 
 
 
 the water ripple uses the **texture atlas** to make the sequence frame animation, and the two layers of ripples are mixed; 
