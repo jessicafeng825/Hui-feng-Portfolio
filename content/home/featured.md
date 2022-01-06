@@ -33,6 +33,6 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 3
-  flip_alt_rows: true
+  view: 5
+  flip_alt_rows: false
 ---
