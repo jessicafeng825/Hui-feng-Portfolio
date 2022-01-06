@@ -28,19 +28,35 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 
 ---
+{{< hl >}}
 
 
+{{< hl >}}
+### involved technology: Unity Shader、HLSL、URP、Computer Graphics、ShaderGUI
 
-### [ Click here to watch the video about it ](https://studio.youtube.com/video/t1ZkP-FN5NA/edit)
+{{< youtube t1ZkP-FN5NA >}}
+
+{{< hl >}}
 
 
-The rendering framework is the PBR Toon shader under the unity URP pipeline. Refer to the URP lighting model and use BRDF based on Minimalist CookTorrance.SPR Batch Compatible.
+{{< hl >}}
+
+**The rendering framework** is the PBR Toon shader under the unity URP pipeline. Refer to the **URP lighting model** and use **BRDF based on Minimalist CookTorrance**.
+
+SPR Batch Compatible.
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/1.jpg" >}}
 
+{{< hl >}}
 
-the phone i am using for testing the performance is OPPO findX2 which has  Qualcomm 585 CPU and Adreno 650 GPU with Android OS 10 system. here is some picture of the performance:
+
+{{< hl >}}
+
+# Performance
+
+
+the phone i am using for testing the performance is **OPPO findX2** which has  **Qualcomm 585 CPU** and **Adreno 650 GPU** with Android OS 10 system. here is some picture of the performance:
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/2.jpg" >}}
 
@@ -50,7 +66,14 @@ the phone i am using for testing the performance is OPPO findX2 which has  Qualc
 
 the fps is around 60.
 
-1. shader property
+{{< hl >}}
+
+
+{{< hl >}}
+
+# Shader property ,Implementation principle and process
+
+## 1.shader property
 
 
 The objects in the environment and the character will use the same shader as follow:
@@ -58,130 +81,171 @@ The objects in the environment and the character will use the same shader as fol
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/7.jpg" >}}
 
+{{< hl >}}
 
-2. surface option
+
+{{< hl >}}
+## 2.surface option
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/8.png" >}}
 
 
-Workflow Mode : Specular or Metallic
+**Workflow Mode :** Specular or Metallic
 
-SurfaceType : Opaque or Transparent
+**SurfaceType :** Opaque or Transparent
 
-Render Face : Front Back Both (For Forward Pass)
+**Render Face :** Front Back Both (For Forward Pass)
 
-Alpha Clipping : enable the Alpha Clipping or not
+**Alpha Clipping :** enable the Alpha Clipping or not
+
+{{< hl >}}
 
 
-3. Base Map
+{{< hl >}}
+## 3. Base Map
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/9.png" >}}
 
 
-The input of the basic texture,Albedo ,Normal and AO. 
+The input of **the basic texture,Albedo ,Normal and AO. **
 
 Albedo and AO merge channels into one texture for input.
 
 Emission input a single texture.
 
+{{< hl >}}
 
-4. Shadow
+
+{{< hl >}}
+## 4.Shadow
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/10.png" >}}
 
 
-This is about the setting options for shadows. You can choose whether to use the ramp map as the shadow. If not, use the universal Toon rendering calculation method which is  NdotL+2 line. And use Two thresholds control the dividing line.
+This is about the setting options for shadows. You can choose whether to use **the ramp map** as the shadow. If not, use the universal Toon rendering calculation method which is  **NdotL+2 line**. And use **Two thresholds** control the dividing line.
 
 
-UseRampMapShadow : Use RampMap to control shadow attenuation.
+**UseRampMapShadow :** Use **RampMap** to control shadow attenuation.
 
-VOffset : V coordinate sampled by RampMap
+**VOffset :** V coordinate sampled by RampMap
 
-Shadow1Color ：The first layer of shadow color
+**Shadow1Color ：** The first layer of shadow color
 
-Shadow2Color ：Second layer shadow color
+**Shadow2Color ：** Second layer shadow color
 
-Shadow1Step : First layer shadow threshold
+**Shadow1Step :** First layer shadow threshold
 
-Shadow1Feather : The first layer of shadow feathering value
+**Shadow1Feather :** The first layer of shadow feathering value
 
-Shadow2Step : Second layer shadow threshold
+**Shadow2Step :** Second layer shadow threshold
 
-Shadow2Feather : The second layer of shadow feathering value
+**Shadow2Feather :** The second layer of shadow feathering value
 
-EnableInShadowMap : Enable InshadowMap or not. inShadowMap is the fixed shadow map.
+**EnableInShadowMap :** Enable InshadowMap or not. inShadowMap is the fixed shadow map.
 
-Receive Shadow : Receive Shadow or not
+**Receive Shadow :** Receive Shadow or not
 
 
-5. Specular
+{{< hl >}}
+
+
+{{< hl >}}
+## 5.Specular
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/11.png" >}}
 
 
-This is about the Specular setting options. Merge normal map and Metal Smooth map. Take the normal map RG channel, Metal and Smooth each occupy a channel to merge into one texture. The normal calculation uses the RG channel to calculate the Z channel result. 
+This is about **the Specular setting options**. Merge normal map and Metal Smooth map. Take the normal map RG channel, Metal and Smooth each occupy a channel to merge into one texture. The normal calculation uses the RG channel to calculate the Z channel result. 
 
 
-You can choose whether it is the Specular rendering of the hair. If it is, the anisotropic hair Specular map will be sampled. If not, the GGX Specular item will be used for regular PBR calculation.
+You can choose whether it is the Specular rendering of the hair. If it is, **the anisotropic hair Specular map** will be sampled. If not, **the GGX Specular item** will be used for regular PBR calculation.
 
 
-SpecularStep : Specular threshold
+**SpecularStep :** Specular threshold
 
-SpecularFeather : Specular feathering
+**SpecularFeather :** Specular feathering
 
-Smoothness : Smoothness 
+**Smoothness :** Smoothness 
 
-HairSpecular : Use anisotropic hair Specular map or not
+**HairSpecular :** Use anisotropic hair Specular map or not
 
-HairShiftMap : Tangent offset graph, offset intensity
+**HairShiftMap :** Tangent offset graph, offset intensity
 
-SpecularShift : The first layer of Specular offset
+**SpecularShift :** The first layer of Specular offset
 
-SpecularShiftSec : The second layer of Specular offset
+**SpecularShiftSec :** The second layer of Specular offset
 
-SpecularSecMul : The second layer of Specular intensity（*Specular)
+**SpecularSecMul :** The second layer of Specular intensity（*Specular)
 
-EnablesSpecularHighlights : Use specular or not
+**EnablesSpecularHighlights :** Use specular or not
+
+{{< hl >}}
 
 
-6. Rim And Outline
+{{< hl >}}
+## 6.Rim And Outline
 
 
-Outline option use the normal expansion algorithm, and use the SmoothOutline algorithm to smooth the stroke.
+Outline option use **the normal expansion algorithm**, and use the **SmoothOutline algorithm** to smooth the stroke.
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/12.png" >}}
 
 
-OpenRim : Enable Rim Light or Not
+**OpenRim :** Enable Rim Light or Not
 
 
-EnableOutline ：Enable Outline or not
+**EnableOutline :** Enable Outline or not
 
-UseSmoothNormal : Enable Smooth Outline or not. the algorithm using is from here:https://github.com/Jason-Ma-233/JasonMaToonRenderPipeline#%E5%B9%B3%E6%BB%91%E6%B3%95%E7%BA%BF%E5%AF%BC%E5%85%A5%E5%B7%A5%E5%85%B7ModelOutlineImporter) 
+**UseSmoothNormal :** Enable Smooth Outline or not. the algorithm using is from here:https://github.com/Jason-Ma-233/JasonMaToonRenderPipeline#%E5%B9%B3%E6%BB%91%E6%B3%95%E7%BA%BF%E5%AF%BC%E5%85%A5%E5%B7%A5%E5%85%B7ModelOutlineImporter) 
 
-OutlineColor:
+**OutlineColor:**
 
-OutlineWidth:
+**OutlineWidth:**
 
 
-7.AdvancedOptions
+{{< hl >}}
+
+
+{{< hl >}}
+## 7.AdvancedOptions
 
 
 
 {{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/13.png" >}}
 
 
-Environment Reflections : Enable refelction or not
+**Environment Reflections :** Enable refelction or not
 
-Enable GPU Instancing : Enable GPU Instancing or not
+**Enable GPU Instancing :** Enable GPU Instancing or not
 
-RenderQueue : 渲染队列
+**RenderQueue :** Render Queue
 
 
+{{< hl >}}
 
-involved technology: Unity Shader、Computer Graphics、ShaderGUI
+
+{{< hl >}}
+# Shader framework and document Architecture
+
+{{< figure src="https://raw.githubusercontent.com/jessicafeng825/Hui-feng-Portfolio/master/content/project/ToonshaderFramworkForCE/14.png" >}}
+
+**Attributes.hlsl:** some ATTRIBUTES AND CBUFFER DATA declarations and initialization, as well as functions for sampling mapping.
+
+**Common.hlsl:** some common **mathematical functions** that will be used, as well as some custom auxiliary functions.
+
+**Shading.hlsl:** some light calculation related functions and the total function of fragment when shading pass.
+
+**Includes.hlsl:** shader dependency library.
+
+**PBRToonOutlinepass.hlsl:** shading PASS
+
+**PBRToonForwardPass.hlsl :** forward rendering PASS
+
+**MetaPass.hlsl :** Meta PASS
+
+**Standard.shader:** shader common to character scenes, divided into two categories, one compiles to Opengl/opengl ES renderers only. One class compiles to renderers other than Opengl/opengl ES renderers. Each class has 6 PASSes, Outline, Light Shading (Forward), ShadowCaster, Depth Pass, Depth Normal Pass and Meta Pass.
