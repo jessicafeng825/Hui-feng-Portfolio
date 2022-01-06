@@ -31,7 +31,7 @@ url_video: ""
 
 
 
-### [👉 Click here to watch the video about it 👈](https://studio.youtube.com/video/t1ZkP-FN5NA/edit)
+### [ Click here to watch the video about it ](https://studio.youtube.com/video/t1ZkP-FN5NA/edit)
 
 
 The rendering framework is the PBR Toon shader under the unity URP pipeline. Refer to the URP lighting model and use BRDF based on Minimalist CookTorrance.SPR Batch Compatible.
