@@ -23,12 +23,12 @@ content:
   order: desc
 
 design:
-  columns: '1'
+  columns: '4'
   # Choose a view for the listings:
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: Card
+  view: 3
   flip_alt_rows: True
 ---
