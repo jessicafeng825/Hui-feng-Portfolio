@@ -1,10 +1,10 @@
 ---
-title: Overdraw rate analysis and debugging tool
-summary: This project is a tool forr showing the overdraw rate both in Unity Editor and in running Game. it realized the display of the overdraw-related indicators of each camera during the debugging of the mobile game, so as to detect and troubleshoot the overdraw problem in the mobile game.
+title: Substance designer practice Collection
+summary: Substance designer practice Collection
 tags:
 - Substance Designer
 
-date: "2021-01-10T16:24:00Z"
+date: "2022-01-01T16:24:00Z"
 authors: ["admin"]
 featured: true
 # Optional external URL for project (replaces project detail page).
