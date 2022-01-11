@@ -1,6 +1,6 @@
 ---
-title: Overdraw rate analysis and debugging tool
-summary: This project is a tool forr showing the overdraw rate both in Unity Editor and in running Game. it realized the display of the overdraw-related indicators of each camera during the debugging of the mobile game, so as to detect and troubleshoot the overdraw problem in the mobile game.
+title: Substance designer practice - Doughnuts
+summary: Doughnuts textures are made from substance designer and the mesh are made from Maya.
 tags:
 - Substance Designer
 
