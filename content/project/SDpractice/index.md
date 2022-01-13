@@ -4,7 +4,7 @@ summary: Substance designer practice Collection
 tags:
 - Substance Designer
 
-date: "2021-01-01T16:24:00Z"
+date: "2022-01-01T15:24:00Z"
 authors: ["admin"]
 featured: true
 # Optional external URL for project (replaces project detail page).
