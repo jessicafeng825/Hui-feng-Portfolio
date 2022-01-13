@@ -1,6 +1,6 @@
 ---
 title: Overdraw rate analysis and debugging tool
-summary: This project is a tool forr showing the overdraw rate both in Unity Editor and in running Game. it realized the display of the overdraw-related indicators of each camera during the debugging of the mobile game, so as to detect and troubleshoot the overdraw problem in the mobile game.
+summary: This project is a tool for showing the overdraw rate both in Unity Editor and in running Game. it was implemented during my internship in kingsoft. i was mainly responsible for the display of the overdraw-related indicators of each camera during the debugging of the mobile game, so as to detect and troubleshoot the overdraw problem in the mobile game.
 tags:
 - Tools
 
